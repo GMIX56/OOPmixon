@@ -1,4 +1,4 @@
-import CoinClass as c
+import CoinClass as c  # c is an alias for CoinClass
 
 
 # The main function.
@@ -8,11 +8,17 @@ def main():
 
        # Display the side of the coin that is facing up.
        print('This side is up:', my_coin.get_sideup())    # notice you do not have to supply the argument/parameter
+        #inital value is going to be heads because of the __init__ method in the class
+        #we initialized it as heads
+
 
        # Toss the coin.
        print('I am going to toss the coin ten times:')
        for count in range(10):
            my_coin.toss()
+
+           my_coin.__sideup = 'Heads'
+           #ignored because sideup is now a private attribute
            
            # Display the side of the coin that is facing up.
            print('This side is up:', my_coin.get_sideup())

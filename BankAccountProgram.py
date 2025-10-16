@@ -29,7 +29,5 @@ def main():
         format(savings.get_balance(), ',.2f'),
         sep='')
 
-   print(savings)
-
 # Call the main function.
 main()
